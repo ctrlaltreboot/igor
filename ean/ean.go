@@ -8,6 +8,10 @@ import (
 )
 
 type EanResponse struct {
+	HotelListResponse HotelListResponse `json:"HotelListResponse"`
+}
+
+type HotelListResponse struct {
 	HotelList HotelList `json:"HotelList"`
 }
 
@@ -65,8 +69,8 @@ func Cheapest(w http.ResponseWriter, r *http.Request) {
 
 	var e EanResponse
 	err = json.Unmarshal(b, &e)
-	for _, deets := range e.HotelList.HotelSummary {
-		fmt.Fprintf(w, "%s\n", deets)
+	fmt.Fprintf(w, "%q", e)
+	for _, deets := range e.HotelListResponse.HotelList.HotelSummary {
+		fmt.Fprintf(w, "%q", deets.RoomRateDetailsList.RateInfos.RateInfo.ChargeableRateInfo.Total)
 	}
-	fmt.Fprintf(w, "%s", b)
 }
