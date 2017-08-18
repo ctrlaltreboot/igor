@@ -3,8 +3,9 @@ package ean
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ctrlaltreboot/igor/helper"
 	"net/http"
+
+	"github.com/ctrlaltreboot/igor/helper"
 )
 
 type EanResponse struct {
@@ -20,23 +21,27 @@ type HotelList struct {
 }
 
 type HotelSummary struct {
-	HotelId             string          `json:"hotelId"`
-	RoomRateDetailsList RoomRateDetails `json:"RoomRateDetailsList"`
+	HotelId             int64               `json:"hotelId"`
+	RoomRateDetailsList RoomRateDetailsList `json:"RoomRateDetailsList"`
+}
+
+type RoomRateDetailsList struct {
+	RoomRateDetails RoomRateDetails `json:"RoomRateDetails"`
 }
 
 type RoomRateDetails struct {
-	RoomTypeCode    string    `json:"roomTypeCode"`
+	RoomTypeCode    int64     `json:"roomTypeCode"`
 	RoomDescription string    `json:"roomDescription"`
 	RateInfos       RateInfos `json:"RateInfos`
 }
 
 type RateInfos struct {
-	RateInfo      RateInfo `json:"RateInfo"`
-	NonRefundable string   `json:"nonRefundable"`
+	RateInfo RateInfo `json:"RateInfo"`
 }
 
 type RateInfo struct {
 	ChargeableRateInfo ChargeableRateInfo `json:"ChargeableRateInfo"`
+	NonRefundable      bool               `json:"nonRefundable"`
 }
 
 type ChargeableRateInfo struct {
@@ -67,10 +72,12 @@ func Cheapest(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "%s", err)
 	}
 
-	var e EanResponse
-	err = json.Unmarshal(b, &e)
-	fmt.Fprintf(w, "%q", e)
-	for _, deets := range e.HotelListResponse.HotelList.HotelSummary {
-		fmt.Fprintf(w, "%q", deets.RoomRateDetailsList.RateInfos.RateInfo.ChargeableRateInfo.Total)
-	}
+	var er EanResponse
+	err = json.Unmarshal(b, &er)
+	fmt.Fprintf(w, "%q", er)
+	/*
+		for _, deets := range e.HotelListResponse.HotelList.HotelSummary {
+			fmt.Fprintf(w, "%q", deets.RoomRateDetailsList.RateInfos.RateInfo.ChargeableRateInfo.Total)
+		}
+	*/
 }
