@@ -32,6 +32,7 @@ func main() {
 	http.HandleFunc("/hotels", hotels.List)
 	cheapestHandler := hotels.CheapestHandler{HotelsAPIEndpoint: hotelsAPIEndpoint}
 	http.HandleFunc("/cheapest_hotel", cheapestHandler.ServeHTTP)
+	http.HandleFunc("/cheapest", ean.Cheapest)
 
 	log.Fatal(http.ListenAndServe("0.0.0.0:8088", nil))
 }
