@@ -2,17 +2,33 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/ctrlaltreboot/igor/ean"
-	"github.com/ctrlaltreboot/igor/hotels"
 	"log"
 	"net/http"
+
+	"os"
+
+	"github.com/ctrlaltreboot/igor/ean"
+	"github.com/ctrlaltreboot/igor/hotels"
 )
+
+var (
+	hotelsAPIEndpoint = "http://127.0.0.1:5091/hotels"
+)
+
+func init() {
+	if v, ok := os.LookupEnv("HOTELS_API_ENDPOINT"); ok {
+		hotelsAPIEndpoint = v
+	}
+}
 
 func main() {
 	http.HandleFunc("/hello", hello)
 	http.HandleFunc("/ean", ean.List)
 	http.HandleFunc("/hotels", hotels.List)
-	http.HandleFunc("/cheapest_hotel", hotels.Cheapest)
+
+	cheapestHandler := hotels.CheapestHandler{HotelsAPIEndpoint: hotelsAPIEndpoint}
+	http.HandleFunc("/cheapest_hotel", cheapestHandler.ServeHTTP)
+
 	log.Fatal(http.ListenAndServe("0.0.0.0:8088", nil))
 }
 
