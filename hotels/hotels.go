@@ -3,8 +3,9 @@ package hotels
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ctrlaltreboot/igor/helper"
 	"net/http"
+
+	"github.com/ctrlaltreboot/igor/helper"
 )
 
 type HotelsResponse struct {
@@ -42,7 +43,6 @@ type Offer struct {
 	Name                  string             `json:"name"`
 	Description           string             `json:"description"`
 	Charges               Charges            `json:"charges"`
-	Inclusions            []string           `json:"inclusions,omitempty"`
 	CancellationPolicy    CancellationPolicy `json:"cancellation_policy"`
 	Promotion             Promotion          `json:"promotion"`
 	BaseIncludedOccupants int32              `json:"base_included_occupants"`
@@ -78,17 +78,40 @@ type Promotion struct {
 	Priority      int64  `json:"priority"`
 }
 
-func Cheapest(w http.ResponseWriter, r *http.Request) {
-	b, err := helper.Fetch("http://127.0.0.1:5091/hotels")
+type CheapestHandler struct {
+	HotelsAPIEndpoint string
+}
+
+type cheapestRes struct {
+	Properties []Property `json:"properties"`
+}
+
+func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	b, err := helper.Fetch(h.HotelsAPIEndpoint)
 	if err != nil {
-		fmt.Fprintf(w, "%s", err)
+		http.Error(w, "error reading from upstream API", http.StatusInternalServerError)
+		// TODO Before going to production, we'd probably log the error here
+		// to stdout/stderr and rely on logs being shipped somewhere like
+		// Papertrail/Graylog/an ELK stack.
+		return
 	}
 
-	var h HotelsResponse
-	err = json.Unmarshal(b, &h)
-	fmt.Fprintf(w, "%s\n", h.Meta.Query.Brand)
-	for _, p := range h.Properties {
-		fmt.Fprintf(w, "%s\n", p.Id)
+	var hr HotelsResponse
+	if err := json.Unmarshal(b, &hr); err != nil {
+		http.Error(w, "error parsing upstream API response", http.StatusInternalServerError)
+		return
+	}
+
+	var res cheapestRes
+	for _, p := range hr.Properties {
+		res.Properties = append(res.Properties, p)
+	}
+
+	// TODO Actually figure out which are the cheapest hotels.
+
+	if err := json.NewEncoder(w).Encode(res); err != nil {
+		http.Error(w, "error writing JSON response", http.StatusInternalServerError)
+		return
 	}
 }
 

@@ -1,0 +1,3249 @@
+{
+  "meta": {
+    "query": {
+      "brand": "jetstar",
+      "offer_type": "standard",
+      "check_in": "2017-12-25",
+      "check_out": "2017-12-27",
+      "adults": "2",
+      "children": "0",
+      "infants": "0",
+      "property_ids": [
+        "12651",
+        "4623",
+        "5982",
+        "6693",
+        "5480",
+        "7666",
+        "6999",
+        "8124",
+        "16808",
+        "12957"
+      ]
+    }
+  },
+  "properties": [
+    {
+      "id": "4623",
+      "room_types": [
+        {
+          "id": "29862",
+          "offers": [
+            {
+              "id": "58954",
+              "name": "14 Day Advance purchase and save 10%",
+              "description": "14 Day Advance purchase and save 10%",
+              "charges": {
+                "total": {
+                  "amount": "862.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "862.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "862.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "862.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": {
+                "promotion_code": "AP%",
+                "name": "Advance Purchase",
+                "description": "Adv. Purchase save %",
+                "campaign_code": "advanpurc-stayandsave",
+                "priority": 1001
+              },
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "58941",
+              "name": "Stay 2 & Save 10%",
+              "description": "Stay 2 nights or more & SAVE!! Melbourne's vibrant full service boutique hotel located in the city's CBD Market Precinct. Offers 24 hour reception, gym/pool access, 24 hour room service, internet, LCD TV. BOOK TODAY!",
+              "charges": {
+                "total": {
+                  "amount": "862.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "862.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "862.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "862.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": {
+                "promotion_code": "STAYSAVE0P",
+                "name": "Stay & Save",
+                "description": "Stay & Save 0%",
+                "campaign_code": "staysave",
+                "priority": 4100
+              },
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "47144",
+              "name": "Elizabeth St Balcony with Breakfast",
+              "description": "Private Balcony overlooking Elizabeth Street,  Al A Cate Breakfast for two in the acclaimed Jasper Kitchen Restaurant. \r\nFREE WIFI ACCESS!!!",
+              "charges": {
+                "total": {
+                  "amount": "978.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "978.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "978.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "978.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "breakfast",
+                  "name": "Breakfast Included",
+                  "description": "Breakfast Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 72 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "46464",
+              "name": "Elizabeth St Balcony",
+              "description": "Private Balcony overlooking Elizabeth Street, King Bed, Ensuite Bathroom with Standing Shower, 46\" TV with Premium Foxtel channels, IPod Docking Station,  Desk & minibar with tea & coffee making facilities",
+              "charges": {
+                "total": {
+                  "amount": "958.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "958.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "958.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "958.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 72 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "29861",
+          "offers": [
+            {
+              "id": "58953",
+              "name": "14 Day Advance purchase and save 10%",
+              "description": "14 Day Advance purchase and save 10%",
+              "charges": {
+                "total": {
+                  "amount": "808.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "808.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "808.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "808.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": {
+                "promotion_code": "AP%",
+                "name": "Advance Purchase",
+                "description": "Adv. Purchase save %",
+                "campaign_code": "advanpurc-stayandsave",
+                "priority": 1001
+              },
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "58943",
+              "name": "Stay 2 & Save 10%",
+              "description": "Stay 2 nights or more & SAVE!! Melbourne's vibrant full service boutique hotel located in the city's CBD Market Precinct. Offers 24 hour reception, gym/pool access, 24 hour room service, internet, LCD TV. BOOK TODAY!",
+              "charges": {
+                "total": {
+                  "amount": "808.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "808.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "808.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "808.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": {
+                "promotion_code": "STAYSAVE0P",
+                "name": "Stay & Save",
+                "description": "Stay & Save 0%",
+                "campaign_code": "staysave",
+                "priority": 4100
+              },
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "46463",
+              "name": "Premium Courtyard Access",
+              "description": "Direct access to Internal Courtyard with a Private Breakfast Nook, King Bed, Ensuite Bathroom with Standing Shower, 46\"TV with Premium Foxtel channels, IPod Dock, Desk & Minibar with Tea & Coffee making facilities",
+              "charges": {
+                "total": {
+                  "amount": "898.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "898.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "898.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "898.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 72 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "47143",
+              "name": "Courtyard Access with breakfast",
+              "description": "Direct access to Internal Courtyard with a Private Breakfast Nook including Al A Cate Breakfast for two in the acclaimed Jasper Kitchen Restaurant. \r\nFREE WIFI ACCESS!!!",
+              "charges": {
+                "total": {
+                  "amount": "918.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "918.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "918.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "918.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "breakfast",
+                  "name": "Breakfast Included",
+                  "description": "Breakfast Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 72 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "29860",
+          "offers": [
+            {
+              "id": "58952",
+              "name": "14 Day Advance purchase and save 10%",
+              "description": "14 Day Advance purchase and save 10%",
+              "charges": {
+                "total": {
+                  "amount": "772.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "772.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "772.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "772.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": {
+                "promotion_code": "AP%",
+                "name": "Advance Purchase",
+                "description": "Adv. Purchase save %",
+                "campaign_code": "advanpurc-stayandsave",
+                "priority": 1001
+              },
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "58942",
+              "name": "Stay 2 & Save 10%",
+              "description": "Stay 2 nights or more & SAVE!! Melbourne's vibrant full service boutique hotel located in the city's CBD Market Precinct. Offers 24 hour reception, gym/pool access, 24 hour room service, internet, LCD TV. BOOK TODAY!",
+              "charges": {
+                "total": {
+                  "amount": "772.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "772.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "772.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "772.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": {
+                "promotion_code": "STAYSAVE0P",
+                "name": "Stay & Save",
+                "description": "Stay & Save 0%",
+                "campaign_code": "staysave",
+                "priority": 4100
+              },
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "47142",
+              "name": "Courtyard views with breakfast",
+              "description": "Views of the Internal courtyard including Al A Cate Breakfast for two in the acclaimed Jasper Kitchen Restaurant. \r\nFREE WIFI ACCESS!!!",
+              "charges": {
+                "total": {
+                  "amount": "878.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "878.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "878.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "878.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "breakfast",
+                  "name": "Breakfast Included",
+                  "description": "Breakfast Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 72 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "46462",
+              "name": "Premiun Courtyard View",
+              "description": "Views of the Internal courtyard, King or Queen Bed, Ensuite Bathroom with Standing Shower, 46\" TV with premium Foxtel channels, IPod Dock, Desk & Minibar with Tea & Coffee making facilities",
+              "charges": {
+                "total": {
+                  "amount": "858.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "858.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "858.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "858.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 72 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "29864",
+          "offers": [
+            {
+              "id": "46466",
+              "name": "Jasper Suite",
+              "description": "King Bed, Ensuite Bathroom with Standing Shower, Separate Lounge area, 46\" TV with Premium Foxtel channels, IPod Dock, Dining Table seating four, Desk & Minibar with Tea & Coffee making facilities. Premium Guest Lounge access included",
+              "charges": {
+                "total": {
+                  "amount": "1098.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "1098.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "1098.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "1098.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 72 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "47146",
+              "name": "Jasper Suite with Breakfast",
+              "description": "Al A Cate Breakfast for two in the acclaimed Jasper Kitchen Restaurant. \r\nFREE WIFI ACCESS!!!",
+              "charges": {
+                "total": {
+                  "amount": "1118.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "1118.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "1118.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "1118.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 72 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6693",
+      "room_types": [
+        {
+          "id": "28863",
+          "offers": [
+            {
+              "id": "44071",
+              "name": "Advance Purchase 21 Days",
+              "description": "Get 20% off the best available rate when you book your stay in advance. \r\nSleeps up to 2 people. Maximum occupancy is 2. Deluxe Twin Room has 2 single beds, free Wi-Fi internet access, Foxtel & movies-on-demand. Room size is 28sqm.",
+              "charges": {
+                "total": {
+                  "amount": "222.40",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "222.40",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "222.40",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "222.40",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "43729",
+              "name": "Best Available Rate",
+              "description": "Sleeps up to 2 people. Maximum occupancy is 2. Deluxe Twin Room has 2 single beds, free Wi-Fi internet access, Foxtel & movies-on-demand. Room size is 28sqm.\r\n",
+              "charges": {
+                "total": {
+                  "amount": "278.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "278.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "278.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "278.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 48 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "1178",
+          "offers": [
+            {
+              "id": "14236",
+              "name": "Best Available with Breakfast",
+              "description": "Sleeps up to 2 people. Maximum occupancy is 2. Deluxe Double Room has 1 queen bed, free Wi-Fi internet access, Foxtel & movies-on-demand. Room size is 28sqm. \r\nIncludes Full Buffet Breakfast for 2.",
+              "charges": {
+                "total": {
+                  "amount": "346.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "346.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "346.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "346.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                },
+                {
+                  "code": "breakfast",
+                  "name": "Breakfast Included",
+                  "description": "Breakfast Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "44070",
+              "name": "Advance Purchase 21 Days",
+              "description": "Get 20% off the best available rate when you book your stay in advance. \r\nSleeps up to 2 people. Maximum occupancy is 2. Deluxe Double Room has 1 queen bed, free Wi-Fi internet access, Foxtel & movies-on-demand. Room size is 28sqm. ",
+              "charges": {
+                "total": {
+                  "amount": "222.40",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "222.40",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "222.40",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "222.40",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "28862",
+          "offers": [
+            {
+              "id": "46212",
+              "name": "Advance Purchase 21 Days",
+              "description": "Get 20% off the best available rate when you book your stay in advance. \r\nFully refurbished room. Sleeps up to 2 people. Maximum occupancy is 2. Premium Deluxe Twin Room has 2 single beds, free Wi-Fi internet access, work desk, Foxtel & movies-on-demand. ",
+              "charges": {
+                "total": {
+                  "amount": "270.40",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "270.40",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "270.40",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "270.40",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "43727",
+              "name": "Best Available Rate",
+              "description": "Fully refurbished room. Sleeps up to 2 people. Maximum occupancy is 2. Premium Deluxe Twin Room has 2 single beds, free Wi-Fi internet access, work desk, Foxtel & movies-on-demand. Room size is 24-34sqm.",
+              "charges": {
+                "total": {
+                  "amount": "338.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "338.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "338.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "338.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 48 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "44130",
+              "name": "Best Available with Breakfast",
+              "description": "Fully refurbished room. Sleeps up to 2 people. Maximum occupancy is 2. Premium Deluxe Twin Room has 2 single beds, free Wi-Fi internet access, work desk, Foxtel & movies-on-demand. Room size is 24-34sqm.\r\nIncluding Full Cooked Breakfast for up to two gues",
+              "charges": {
+                "total": {
+                  "amount": "406.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "406.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "406.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "406.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                },
+                {
+                  "code": "breakfast",
+                  "name": "Breakfast Included",
+                  "description": "Breakfast Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 48 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "28861",
+          "offers": [
+            {
+              "id": "46209",
+              "name": "Advance Purchase 21 Days",
+              "description": "Get 20% off the best available rate when you book your stay in advance. \r\nFully refurbished room. Sleeps up to 2 people. Maximum occupancy is 2. Premium Deluxe Double Room has 1 zip king or queen bed, free Wi-Fi internet access, work desk, Foxtel & movies",
+              "charges": {
+                "total": {
+                  "amount": "270.40",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "270.40",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "270.40",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "270.40",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "43726",
+              "name": "Best Available Rate",
+              "description": "Fully refurbished room. Sleeps up to 2 people. Maximum occupancy is 2. Premium Deluxe Double Room has 1 zip king or queen bed, free Wi-Fi internet access, work desk, Foxtel & movies-on-demand. Room size is 24-34sqm.",
+              "charges": {
+                "total": {
+                  "amount": "338.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "338.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "338.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "338.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 48 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "43728",
+              "name": "Best Available with Breakfast",
+              "description": "Fully refurbished room. Sleeps up to 2 people. Maximum occupancy is 2. Premium Deluxe Double Room has 1 zip king or queen bed, free Wi-Fi internet access, work desk, Foxtel & movies-on-demand. Room size is 24-34sqm.\r\nIncluding Full Cooked Breakfast for up",
+              "charges": {
+                "total": {
+                  "amount": "406.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "406.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "406.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "406.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                },
+                {
+                  "code": "breakfast",
+                  "name": "Breakfast Included",
+                  "description": "Breakfast Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 48 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "1179",
+          "offers": [
+            {
+              "id": "226",
+              "name": "Best Available Rate ",
+              "description": "Sleeps up to 2 people. Maximum occupancy is 2. Corporate Double Room has 1 queen bed, spacious sitting area, free Wi-Fi internet access, Foxtel & movies-on-demand. Room size is 34sqm. ",
+              "charges": {
+                "total": {
+                  "amount": "338.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "338.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "338.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "338.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 48 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "1180",
+          "offers": [
+            {
+              "id": "227",
+              "name": "Best Available Rate ",
+              "description": "Sleeps up to 2 people. Maximum occupancy is 2. Executive Suite has a separate bedroom with 1 queen bed & separate lounge area, free Wi-Fi internet access, Foxtel & movies-on-demand. Room size is 47-56sqm.",
+              "charges": {
+                "total": {
+                  "amount": "398.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "398.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "398.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "398.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "internet",
+                  "name": "WiFi Included",
+                  "description": "WiFi Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 48 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5480",
+      "room_types": [
+        {
+          "id": "7127",
+          "offers": [
+            {
+              "id": "5485",
+              "name": "1 Bedroom City View",
+              "description": "Enjoy the city views from the balcony of your spacious One bedroom apartment. Located in the heart of Darwin CBD. Mantra on the Esplanade is an iconic, vibrant hotel with terrific facilities including a luxurious pool and Finz Restaurant.",
+              "charges": {
+                "total": {
+                  "amount": "378.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "378.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "378.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "378.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "5486",
+              "name": "1 Bedroom City View B&B",
+              "description": "Incl buffet breakfast for 2 people. Great City views from your apartment. Located in the heart of Darwin CBD. Mantra on the Esplanade is an iconic, vibrant hotel with terrific facilities including Finz restaurant & bar.",
+              "charges": {
+                "total": {
+                  "amount": "438.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "438.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "438.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "438.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "46848",
+              "name": "DELETE  Weekend Special",
+              "description": "Adjacent to Mitchell St and in the Darwin's premier entertianment precinct, Mantra on the Esplanade makes a perfect base for exploring Darwin. Enjoy a full buffet Breakfast for 2 and lazy midday check-out on us. There is no better way to find your Mantra!",
+              "charges": {
+                "total": {
+                  "amount": "1998.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "1998.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "1998.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "1998.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [
+                {
+                  "code": "breakfast",
+                  "name": "Breakfast Included",
+                  "description": "Breakfast Included"
+                }
+              ],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "7130",
+          "offers": [
+            {
+              "id": "5489",
+              "name": "2 Bedroom Apartment",
+              "description": "Enjoy this spacious 2 bedroom apartment. Mantra on the Esplanade is an iconic, vibrant hotel with terrific facilities and is located in the heart of the CBD.",
+              "charges": {
+                "total": {
+                  "amount": "578.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "578.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "578.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "578.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "7129",
+          "offers": [
+            {
+              "id": "5487",
+              "name": "1 Bedroom Harbour View",
+              "description": "Enjoy all that Darwin has to offer in your centrally located 1 bedroom apartment, with views overlooking the breath-taking Harbour. As the sun sets on another beautiful day you will know you have found your Mantra.",
+              "charges": {
+                "total": {
+                  "amount": "418.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "418.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "418.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "418.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "5488",
+              "name": "1 Bedroom Harbour View B&B",
+              "description": "Incl buffet breakfast for 2 people. Great Harbour views from your 1 bedroom apartment. Located in the heart of Darwin CBD Mantra on the Esplanade is an iconic, vibrant hotel with terrific facilities including Finz restaurant & bar.",
+              "charges": {
+                "total": {
+                  "amount": "478.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "478.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "478.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "478.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "7131",
+          "offers": [
+            {
+              "id": "5490",
+              "name": "3 Bedroom Apartment",
+              "description": "Perfect for families! This spacious 3 bedroom apartment offers awesome Harbour views. Mantra on the Esplanade is an iconic, vibrant hotel with terrific facilities and is located in the heart of the CBD.",
+              "charges": {
+                "total": {
+                  "amount": "1318.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "1318.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "1318.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "1318.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "7125",
+          "offers": [
+            {
+              "id": "5484",
+              "name": "Hotel Harbour View B&B",
+              "description": "Incl buffet breakfast for 2 people. Great Harbour views from your room, located in the heart of Darwin CBD. Mantra on the Esplanade is an iconic, vibrant hotel with terrific facilities including Finz restaurant & bar.",
+              "charges": {
+                "total": {
+                  "amount": "338.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "338.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "338.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "338.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "5483",
+              "name": "Hotel Harbour View",
+              "description": "Enjoy the Harbour views from your spacious hotel room,  located in the heart of Darwin CBD. Mantra on the Esplanade is an iconic, vibrant hotel with terrific facilities including a luxurious pool and Finz Restaurant.",
+              "charges": {
+                "total": {
+                  "amount": "278.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "278.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "278.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "278.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "7123",
+          "offers": [
+            {
+              "id": "5482",
+              "name": "Hotel City View B&B",
+              "description": "Incl buffet breakfast for 2 people. Great City views from your room, located in the heart of Darwin CBD. Mantra on the Esplanade is an iconic, vibrant hotel with terrific facilities including Finz restaurant & bar.",
+              "charges": {
+                "total": {
+                  "amount": "298.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "298.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "298.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "298.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            },
+            {
+              "id": "5481",
+              "name": "Hotel City View",
+              "description": "Dreaming of the Perfect Getaway or just for a Night! Book Now and Save! We even have Discounted Harbour View and Apartment Room Upgrades Available enquire at Check-In! Located in the Darwin CBD with a pool and restaurant.",
+              "charges": {
+                "total": {
+                  "amount": "238.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "238.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "238.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "238.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6999",
+      "room_types": [
+        {
+          "id": "3753",
+          "offers": [
+            {
+              "id": "7888",
+              "name": "2 Bedroom Apartment",
+              "description": "Quest Best Rate - enjoy complimentary unlimited Wi-Fi, onsite secure car parking and access to gym, pool & heated spa. Convenient CBD location - perfect for corporate & leisure travel.",
+              "charges": {
+                "total": {
+                  "amount": "478.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "478.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "478.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "478.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "3754",
+          "offers": [
+            {
+              "id": "7892",
+              "name": "2 Bedroom Executive Apartment",
+              "description": "Quest Best Rate - enjoy complimentary unlimited Wi-Fi, onsite secure car parking and access to gym, pool & heated spa. Convenient CBD location - perfect for corporate & leisure travel.\r\n",
+              "charges": {
+                "total": {
+                  "amount": "518.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "518.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "518.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "518.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "3752",
+          "offers": [
+            {
+              "id": "7885",
+              "name": "1 Bedroom Apartment",
+              "description": "Quest Best Rate - enjoy complimentary unlimited Wi-Fi, onsite secure car parking and access to gym, pool & heated spa. Convenient CBD location - perfect for corporate & leisure travel.\r\nIf you are arriving late (outside our reception hours) please phone (",
+              "charges": {
+                "total": {
+                  "amount": "380.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "380.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "380.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "380.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": true,
+                "description": "<strong>Non-refundable:</strong> This low rate does not permit changes or cancellations"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5982",
+      "room_types": [
+        {
+          "id": "2873",
+          "offers": [
+            {
+              "id": "1817",
+              "name": "Queen/Single Room",
+              "description": "One nights accommmodation in one of our Queen/Single Rooms.",
+              "charges": {
+                "total": {
+                  "amount": "260.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "260.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "260.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "260.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 24 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "21824",
+          "offers": [
+            {
+              "id": "29970",
+              "name": "Self Contained Unit",
+              "description": "One nights accommodation in our Self Contained Unit.",
+              "charges": {
+                "total": {
+                  "amount": "400.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "400.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "400.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "400.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 24 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "2876",
+          "offers": [
+            {
+              "id": "1821",
+              "name": "Family Room",
+              "description": "One nights accommodation in our Family Room.",
+              "charges": {
+                "total": {
+                  "amount": "360.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "360.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "360.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "360.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 24 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "2881",
+          "offers": [
+            {
+              "id": "1825",
+              "name": "Budget Twin Room",
+              "description": "One nights accommodation in our Budget Twin Room.",
+              "charges": {
+                "total": {
+                  "amount": "198.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "198.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "198.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "198.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 24 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "22254",
+          "offers": [
+            {
+              "id": "30904",
+              "name": "Queen Deluxe Room",
+              "description": "One night's accommodation in our refurbished Queen Deluxe Room.",
+              "charges": {
+                "total": {
+                  "amount": "330.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "330.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "330.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "330.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 24 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "2878",
+          "offers": [
+            {
+              "id": "1823",
+              "name": "Spa Room",
+              "description": "One nights accommodation in our Spa Room.",
+              "charges": {
+                "total": {
+                  "amount": "360.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "360.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "360.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "360.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 24 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "2872",
+          "offers": [
+            {
+              "id": "1809",
+              "name": "Queen Room",
+              "description": "One nights accommodation in one of our Queen Rooms.",
+              "charges": {
+                "total": {
+                  "amount": "260.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "260.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "260.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "260.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 24 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8124",
+      "room_types": [
+        {
+          "id": "27185",
+          "offers": [
+            {
+              "id": "40559",
+              "name": "Room Only",
+              "description": "One bedroom Studio Chalet with a queen bed with ensuite, kitchenette, tv with dvd player in a living area opening onto a large balcony, some with partial water views.  Price is for 2 people.",
+              "charges": {
+                "total": {
+                  "amount": "380.00",
+                  "currency": "AUD"
+                },
+                "payable_at_booking": {
+                  "total": {
+                    "amount": "380.00",
+                    "currency": "AUD"
+                  },
+                  "discount": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "base_rate": {
+                    "amount": "380.00",
+                    "currency": "AUD"
+                  },
+                  "tax": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "tax_recovery": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  },
+                  "extra_occupant_charge": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "payable_at_property": {
+                  "total": {
+                    "amount": "0.00",
+                    "currency": "AUD"
+                  }
+                },
+                "total_before_discount": {
+                  "amount": "380.00",
+                  "currency": "AUD"
+                },
+                "discount": {
+                  "amount": "0.00",
+                  "currency": "AUD"
+                }
+              },
+              "inclusions": [],
+              "cancellation_policy": {
+                "is_nonrefundable": false,
+                "description": "<strong>Free cancellation</strong> up to 72 hours before check-in"
+              },
+              "promotion": null,
+              "base_included_occupants": 2,
+              "extra_occupant_count": 0,
+              "type": "standard"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
