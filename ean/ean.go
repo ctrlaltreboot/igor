@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strconv"
 
 	"github.com/ctrlaltreboot/igor/helper"
 )
@@ -57,11 +58,25 @@ type Offer struct {
 }
 
 type offers struct {
-	Offers []HotelSummary `json:"HotelSummary"`
+	Offers []Offer
+}
+
+type hotelSummaries struct {
+	HotelSummary []HotelSummary `json:"HotelSummary"`
 }
 
 type CheapestHandler struct {
 	EanAPIEndpoint string
+}
+
+func summaryToOffer(hs HotelSummary) Offer {
+	return Offer{
+		strconv.FormatInt(hs.HotelId, 10),
+		strconv.FormatInt(hs.RoomRateDetailsList.RoomRateDetails.RoomTypeCode, 10),
+		hs.RoomRateDetailsList.RoomRateDetails.RoomDescription,
+		hs.RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo.Total,
+		strconv.FormatBool(hs.RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.NonRefundable),
+	}
 }
 
 func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -80,7 +95,7 @@ func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	var res offers
 	for _, hs := range er.HotelListResponse.HotelList.HotelSummary {
-		res.Offers = append(res.Offers, hs)
+		res.Offers = append(res.Offers, summaryToOffer(hs))
 	}
 
 	if err := json.NewEncoder(w).Encode(res); err != nil {
