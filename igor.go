@@ -22,7 +22,7 @@ func init() {
 	}
 
 	if z, ok := os.LookupEnv("EAN_API_ENDPOINT"); ok {
-		hotelsAPIEndpoint = z
+		eanAPIEndpoint = z
 	}
 }
 
@@ -32,7 +32,8 @@ func main() {
 	http.HandleFunc("/hotels", hotels.List)
 	cheapestHandler := hotels.CheapestHandler{HotelsAPIEndpoint: hotelsAPIEndpoint}
 	http.HandleFunc("/cheapest_hotel", cheapestHandler.ServeHTTP)
-	http.HandleFunc("/cheapest", ean.Cheapest)
+	eanCheapestHandler := ean.CheapestHandler{EanAPIEndpoint: eanAPIEndpoint}
+	http.HandleFunc("/cheapest", eanCheapestHandler.ServeHTTP)
 
 	log.Fatal(http.ListenAndServe("0.0.0.0:8088", nil))
 }
