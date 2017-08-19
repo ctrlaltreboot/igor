@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"sort"
 	"strconv"
 
 	"github.com/ctrlaltreboot/igor/helper"
@@ -50,19 +51,19 @@ type ChargeableRateInfo struct {
 }
 
 type Offer struct {
-	PropertyName  string `json:"property_name"`
-	RoomTypeName  string `json:"room_type_name"`
-	OfferName     string `json:"offer_name"`
-	Amount        string `json:"amount"`
-	NonRefundable string `json:"is_non_refundable"`
+	PropertyName  string  `json:"property_name"`
+	RoomTypeName  string  `json:"room_type_name"`
+	OfferName     string  `json:"offer_name"`
+	Amount        float64 `json:"amount"`
+	NonRefundable bool    `json:"is_non_refundable"`
+}
+
+type cheapest struct {
+	CheapestOffer Offer `json:"cheapest_offer"`
 }
 
 type offers struct {
 	Offers []Offer
-}
-
-type hotelSummaries struct {
-	HotelSummary []HotelSummary `json:"HotelSummary"`
 }
 
 type CheapestHandler struct {
@@ -70,12 +71,17 @@ type CheapestHandler struct {
 }
 
 func summaryToOffer(hs HotelSummary) Offer {
+	amount, err := strconv.ParseFloat(hs.RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo.Total, 64)
+	if err != nil {
+		panic(err)
+	}
+
 	return Offer{
 		strconv.FormatInt(hs.HotelId, 10),
 		strconv.FormatInt(hs.RoomRateDetailsList.RoomRateDetails.RoomTypeCode, 10),
 		hs.RoomRateDetailsList.RoomRateDetails.RoomDescription,
-		hs.RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.ChargeableRateInfo.Total,
-		strconv.FormatBool(hs.RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.NonRefundable),
+		amount,
+		hs.RoomRateDetailsList.RoomRateDetails.RateInfos.RateInfo.NonRefundable,
 	}
 }
 
@@ -93,10 +99,16 @@ func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var res offers
+	var o offers
 	for _, hs := range er.HotelListResponse.HotelList.HotelSummary {
-		res.Offers = append(res.Offers, summaryToOffer(hs))
+		o.Offers = append(o.Offers, summaryToOffer(hs))
 	}
+
+	sort.SliceStable(o.Offers, func(i, j int) bool {
+		return o.Offers[i].Amount < o.Offers[j].Amount
+	})
+
+	res := cheapest{o.Offers[0]}
 
 	if err := json.NewEncoder(w).Encode(res); err != nil {
 		http.Error(w, "error writing JSON response", http.StatusInternalServerError)
