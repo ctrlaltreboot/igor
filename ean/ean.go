@@ -8,6 +8,7 @@ import (
 	"strconv"
 
 	"github.com/ctrlaltreboot/igor/helper"
+	"golang.org/x/net/context"
 )
 
 type EanResponse struct {
@@ -86,6 +87,15 @@ func summaryToOffer(hs HotelSummary) Offer {
 }
 
 func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	// ctx is the Context for this handler. Calling cancel closes the
+	// ctx.Done channel, which is the cancellation signal for requests
+	// started by this handler.
+	var cancel context.CancelFunc
+
+	// this context does not timeout.
+	_, cancel = context.WithCancel(context.Background())
+	defer cancel() // Cancel ctx as soon as this function returns
+
 	b, err := helper.Fetch(h.EanAPIEndpoint)
 	if err != nil {
 		http.Error(w, "error reading from upstream API", http.StatusInternalServerError)
