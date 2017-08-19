@@ -48,12 +48,45 @@ type ChargeableRateInfo struct {
 	Total string `json:"@total"`
 }
 
-type CheapestOffer struct {
+type Offer struct {
 	PropertyName  string `json:"property_name"`
 	RoomTypeName  string `json:"room_type_name"`
 	OfferName     string `json:"offer_name"`
 	Amount        string `json:"amount"`
 	NonRefundable string `json:"is_non_refundable"`
+}
+
+type offers struct {
+	Offers []HotelSummary `json:"HotelSummary"`
+}
+
+type CheapestHandler struct {
+	EanAPIEndpoint string
+}
+
+func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	b, err := helper.Fetch(h.EanAPIEndpoint)
+	if err != nil {
+		http.Error(w, "error reading from upstream API", http.StatusInternalServerError)
+		// As w/ hotels, log elsewhere.
+		return
+	}
+
+	var er EanResponse
+	if err := json.Unmarshal(b, &er); err != nil {
+		http.Error(w, "error parsing upstream API response", http.StatusInternalServerError)
+		return
+	}
+
+	var res offers
+	for _, hs := range er.HotelListResponse.HotelList.HotelSummary {
+		res.Offers = append(res.Offers, hs)
+	}
+
+	if err := json.NewEncoder(w).Encode(res); err != nil {
+		http.Error(w, "error writing JSON response", http.StatusInternalServerError)
+		return
+	}
 }
 
 func List(w http.ResponseWriter, r *http.Request) {
@@ -64,20 +97,4 @@ func List(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "application/json")
 	fmt.Fprintf(w, "%s", b)
-}
-
-func Cheapest(w http.ResponseWriter, r *http.Request) {
-	b, err := helper.Fetch("http://127.0.0.1:5092/ean")
-	if err != nil {
-		fmt.Fprintf(w, "%s", err)
-	}
-
-	var er EanResponse
-	err = json.Unmarshal(b, &er)
-	fmt.Fprintf(w, "%q", er)
-	/*
-		for _, deets := range e.HotelListResponse.HotelList.HotelSummary {
-			fmt.Fprintf(w, "%q", deets.RoomRateDetailsList.RateInfos.RateInfo.ChargeableRateInfo.Total)
-		}
-	*/
 }
