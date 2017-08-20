@@ -35,7 +35,7 @@ func main() {
 	eanCheapestHandler := ean.CheapestHandler{EanAPIEndpoint: eanAPIEndpoint}
 	http.HandleFunc("/cheapest", eanCheapestHandler.ServeHTTP)
 
-	log.Fatal(http.ListenAndServe("0.0.0.0:8088", nil))
+	log.Fatal(http.ListenAndServe("0.0.0.0:5000", nil))
 }
 
 func hello(w http.ResponseWriter, r *http.Request) {
