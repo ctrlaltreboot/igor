@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strconv"
 
 	"github.com/ctrlaltreboot/igor/helper"
 )
@@ -13,25 +14,23 @@ type HotelsResponse struct {
 }
 
 type Property struct {
+	Id        string     `json:"id"`
 	RoomTypes []RoomType `json:"room_types"`
 }
 
 type RoomType struct {
+	Id     string  `json:"id"`
 	Offers []Offer `json:"offers"`
 }
 
 type Offer struct {
+	Id      string  `json:"id"`
+	Name    string  `json:"name"`
 	Charges Charges `json:"charges"`
 }
 
 type Charges struct {
-	Total               Charge `json:"total"`
-	PayableAtBooking    Charge `json:"payable_at_booking"`
-	Discount            Charge `json:"discount"`
-	BaseRate            Charge `json:"base_rate"`
-	Tax                 Charge `json:"tax"`
-	TaxRecovery         Charge `json:"tax_recovery"`
-	ExtraOccupantCharge Charge `json:"extra_occupant_charge"`
+	Total Charge `json:"total"`
 }
 
 type Charge struct {
@@ -39,12 +38,51 @@ type Charge struct {
 	Currency string `json:"currency"`
 }
 
+type propertyOffers struct {
+	Properties []PropertyOffer
+}
+
+type cheapest struct {
+	PropertyOffer PropertyOffer `json:"PropertyOffer"`
+}
+
+type PropertyOffer struct {
+	Amount     float64 `json:"amount"`
+	OfferId    string  `json:"offer_id"`
+	OfferName  string  `json:"offer_name"`
+	PropertyId string  `json:"property_id"`
+	RoomTypeId string  `json:"room_type_id"`
+}
+
 type CheapestHandler struct {
 	HotelsAPIEndpoint string
 }
 
-type cheapestRes struct {
-	Properties []Property `json:"properties"`
+func toOffers(property []Property) (propertyOffers, error) {
+	var pos propertyOffers
+	// Get Offer slice, convert amount then save
+	for _, p := range property {
+		for _, rt := range p.RoomTypes {
+			for _, o := range rt.Offers {
+				amount, err := strconv.ParseFloat(o.Charges.Total.Amount, 64)
+				if err != nil {
+					return pos, err
+				}
+
+				po := PropertyOffer{
+					amount,
+					o.Id,
+					o.Name,
+					p.Id,
+					rt.Id,
+				}
+
+				pos.Properties = append(pos.Properties, po)
+			}
+		}
+	}
+
+	return pos, nil
 }
 
 func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -57,15 +95,18 @@ func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Get hotels JSON response, unmarshal to defined HotelsResponse struct type
 	var hr HotelsResponse
 	if err := json.Unmarshal(b, &hr); err != nil {
 		http.Error(w, "error parsing upstream API response", http.StatusInternalServerError)
 		return
 	}
 
-	var res cheapestRes
-	for _, p := range hr.Properties {
-		res.Properties = append(res.Properties, p)
+	// Parse the HotelsResponse in hr
+	res, err := toOffers(hr.Properties)
+	if err != nil {
+		http.Error(w, "error reading from upstream API", http.StatusInternalServerError)
+		return
 	}
 
 	// TODO Actually figure out which are the cheapest hotels.
