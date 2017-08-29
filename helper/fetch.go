@@ -3,11 +3,10 @@ package helper
 import (
 	"io/ioutil"
 	"net/http"
-	"time"
 )
 
 func Fetch(url string) ([]byte, error) {
-	c := &http.Client{Timeout: 10 * time.Second}
+	c := &http.Client{}
 	res, err := c.Get(url)
 	if err != nil {
 		return nil, err
