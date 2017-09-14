@@ -1,1 +1,4 @@
+lib/*
+.shards/*
+main
 igor

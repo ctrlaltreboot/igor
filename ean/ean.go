@@ -2,13 +2,10 @@ package ean
 
 import (
 	"encoding/json"
-	"fmt"
-	"net/http"
 	"sort"
 	"strconv"
 
-	"github.com/ctrlaltreboot/igor/helper"
-	"golang.org/x/net/context"
+	"igor/helper"
 )
 
 type EanResponse struct {
@@ -59,8 +56,8 @@ type Offer struct {
 	NonRefundable bool    `json:"is_non_refundable"`
 }
 
-type cheapest struct {
-	CheapestOffer Offer `json:"cheapest_offer"`
+type Cheapest struct {
+	CheapestOffer Offer `json:"PropertyOffer"`
 }
 
 type offers struct {
@@ -86,27 +83,16 @@ func summaryToOffer(hs HotelSummary) Offer {
 	}
 }
 
-func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	// ctx is the Context for this handler. Calling cancel closes the
-	// ctx.Done channel, which is the cancellation signal for requests
-	// started by this handler.
-	var cancel context.CancelFunc
+func GetCheapest(url string) Offer {
+	b, err := helper.Fetch(url)
 
-	// this context does not timeout.
-	_, cancel = context.WithCancel(context.Background())
-	defer cancel() // Cancel ctx as soon as this function returns
-
-	b, err := helper.Fetch(h.EanAPIEndpoint)
 	if err != nil {
-		http.Error(w, "error reading from upstream API", http.StatusInternalServerError)
-		// As w/ hotels, log elsewhere.
-		return
+		panic(err)
 	}
 
 	var er EanResponse
 	if err := json.Unmarshal(b, &er); err != nil {
-		http.Error(w, "error parsing upstream API response", http.StatusInternalServerError)
-		return
+		panic(err)
 	}
 
 	var o offers
@@ -118,20 +104,5 @@ func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return o.Offers[i].Amount < o.Offers[j].Amount
 	})
 
-	res := cheapest{o.Offers[0]}
-
-	if err := json.NewEncoder(w).Encode(res); err != nil {
-		http.Error(w, "error writing JSON response", http.StatusInternalServerError)
-		return
-	}
-}
-
-func List(w http.ResponseWriter, r *http.Request) {
-	b, err := helper.Fetch("http://127.0.0.1:5092/ean")
-	if err != nil {
-		fmt.Fprintf(w, "%s", err)
-	}
-
-	w.Header().Set("Content-Type", "application/json")
-	fmt.Fprintf(w, "%s", b)
+	return o.Offers[0]
 }

@@ -2,10 +2,10 @@ package hotels
 
 import (
 	"encoding/json"
-	"fmt"
-	"net/http"
+	"sort"
+	"strconv"
 
-	"github.com/ctrlaltreboot/igor/helper"
+	"igor/helper"
 )
 
 type HotelsResponse struct {
@@ -13,25 +13,24 @@ type HotelsResponse struct {
 }
 
 type Property struct {
+	Id        string     `json:"id"`
 	RoomTypes []RoomType `json:"room_types"`
 }
 
 type RoomType struct {
+	Id     string  `json:"id"`
 	Offers []Offer `json:"offers"`
 }
 
 type Offer struct {
-	Charges Charges `json:"charges"`
+	Id                 string             `json:"id"`
+	Name               string             `json:"name"`
+	Charges            Charges            `json:"charges"`
+	CancellationPolicy CancellationPolicy `json:"cancellation_policy"`
 }
 
 type Charges struct {
-	Total               Charge `json:"total"`
-	PayableAtBooking    Charge `json:"payable_at_booking"`
-	Discount            Charge `json:"discount"`
-	BaseRate            Charge `json:"base_rate"`
-	Tax                 Charge `json:"tax"`
-	TaxRecovery         Charge `json:"tax_recovery"`
-	ExtraOccupantCharge Charge `json:"extra_occupant_charge"`
+	Total Charge `json:"total"`
 }
 
 type Charge struct {
@@ -39,49 +38,75 @@ type Charge struct {
 	Currency string `json:"currency"`
 }
 
+type CancellationPolicy struct {
+	IsNonRefundable bool `json:"is_nonrefundable"`
+}
+
+type propertyOffers struct {
+	Offers []PropertyOffer
+}
+
+type Cheapest struct {
+	PropertyOffer PropertyOffer `json:"PropertyOffer"`
+}
+
+type PropertyOffer struct {
+	PropertyName  string  `json:"property_name"`
+	RoomTypeName  string  `json:"room_type_name"`
+	OfferName     string  `json:"offer_name"`
+	Amount        float64 `json:"amount"`
+	NonRefundable bool    `json:"is_non_refundable"`
+}
+
 type CheapestHandler struct {
 	HotelsAPIEndpoint string
 }
 
-type cheapestRes struct {
-	Properties []Property `json:"properties"`
-}
+func toOffers(property []Property) (propertyOffers, error) {
+	var pos propertyOffers
+	// Get Offer slice, convert amount then save
+	for _, p := range property {
+		for _, rt := range p.RoomTypes {
+			for _, o := range rt.Offers {
+				amount, err := strconv.ParseFloat(o.Charges.Total.Amount, 64)
+				if err != nil {
+					return pos, err
+				}
 
-func (h *CheapestHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	b, err := helper.Fetch(h.HotelsAPIEndpoint)
-	if err != nil {
-		http.Error(w, "error reading from upstream API", http.StatusInternalServerError)
-		// TODO Before going to production, we'd probably log the error here
-		// to stdout/stderr and rely on logs being shipped somewhere like
-		// Papertrail/Graylog/an ELK stack.
-		return
+				po := PropertyOffer{
+					p.Id,
+					rt.Id,
+					o.Name,
+					amount,
+					o.CancellationPolicy.IsNonRefundable,
+				}
+
+				pos.Offers = append(pos.Offers, po)
+			}
+		}
 	}
 
+	return pos, nil
+}
+
+func GetCheapest(url string) PropertyOffer {
+	b, err := helper.Fetch(url)
+
+	// Get hotels JSON response, unmarshal to defined HotelsResponse struct type
 	var hr HotelsResponse
 	if err := json.Unmarshal(b, &hr); err != nil {
-		http.Error(w, "error parsing upstream API response", http.StatusInternalServerError)
-		return
+		panic(err)
 	}
 
-	var res cheapestRes
-	for _, p := range hr.Properties {
-		res.Properties = append(res.Properties, p)
-	}
-
-	// TODO Actually figure out which are the cheapest hotels.
-
-	if err := json.NewEncoder(w).Encode(res); err != nil {
-		http.Error(w, "error writing JSON response", http.StatusInternalServerError)
-		return
-	}
-}
-
-func List(w http.ResponseWriter, r *http.Request) {
-	b, err := helper.Fetch("http://127.0.0.1:5091/hotels")
+	// Parse the HotelsResponse in hr
+	pos, err := toOffers(hr.Properties)
 	if err != nil {
-		fmt.Fprintf(w, "%s", err)
+		panic(err)
 	}
 
-	w.Header().Set("Content-Type", "application/json")
-	fmt.Fprintf(w, "%s", b)
+	sort.SliceStable(pos.Offers, func(i, j int) bool {
+		return pos.Offers[i].Amount < pos.Offers[j].Amount
+	})
+
+	return pos.Offers[0]
 }

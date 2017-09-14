@@ -7,8 +7,7 @@ import (
 
 	"os"
 
-	"github.com/ctrlaltreboot/igor/ean"
-	"github.com/ctrlaltreboot/igor/hotels"
+	"igor/cheapest"
 )
 
 var (
@@ -28,14 +27,21 @@ func init() {
 
 func main() {
 	http.HandleFunc("/hello", hello)
-	http.HandleFunc("/ean", ean.List)
-	http.HandleFunc("/hotels", hotels.List)
-	cheapestHandler := hotels.CheapestHandler{HotelsAPIEndpoint: hotelsAPIEndpoint}
-	http.HandleFunc("/cheapest_hotel", cheapestHandler.ServeHTTP)
-	eanCheapestHandler := ean.CheapestHandler{EanAPIEndpoint: eanAPIEndpoint}
-	http.HandleFunc("/cheapest", eanCheapestHandler.ServeHTTP)
 
-	log.Fatal(http.ListenAndServe("0.0.0.0:8088", nil))
+	cheapestHandler := cheapest.CheapestHandler{
+		HotelsAPIEndpoint: hotelsAPIEndpoint,
+		EanAPIEndpoint:    eanAPIEndpoint,
+	}
+
+	http.HandleFunc("/cheapest_hotel", cheapestHandler.Hotel)
+	http.HandleFunc("/hotels", cheapestHandler.ListHotel)
+
+	http.HandleFunc("/cheapest_ean", cheapestHandler.Ean)
+	http.HandleFunc("/ean", cheapestHandler.ListEan)
+
+	http.HandleFunc("/cheapest", cheapestHandler.ServeHTTP)
+
+	log.Fatal(http.ListenAndServe("0.0.0.0:5000", nil))
 }
 
 func hello(w http.ResponseWriter, r *http.Request) {
